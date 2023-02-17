@@ -1,9 +1,50 @@
-
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
+ */
 package duke.choice;
 
+/**
+ *
+ * @author kokec
+ */
+
 public class Clothing {
-        
-      String size, description;
-      double price;
+
+    private String description;
+    private double price;
+    private String size = "M";
     
+    //constantes
+    public final double minimumPrice = 10;
+    public final double taxRate = 0.2;
+    
+    public String getDescription() {
+        return description;
+    }
+
+    public void setDescription(String description) {
+        this.description = description;
+    }
+
+    public double getPrice() {
+        return price+price*taxRate;
+    }
+
+    public void setPrice(double newPrice) {
+        price = (newPrice > minimumPrice) ? newPrice : minimumPrice;
+    
+    }
+
+    public String getSize() {
+        return size;
+    }
+
+    public void setSize(String size) {
+        this.size = size;
+    }
+   
+
+    
+
 }
