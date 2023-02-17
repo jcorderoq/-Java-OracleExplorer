@@ -1,7 +1,53 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
+ */
 package duke.choice;
 
+/**
+ *
+ * @author kokec
+ */
+class Customer {
 
-public class Customer {
-   String name, size;
-   
+    private String name;
+    private String size;
+    private int measurement = 3;
+    
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public String getSize() {
+        return size;
+    }
+
+    public void setSize(String size) {
+        this.size = size;
+    }
+    
+    public void setSize(int size){
+        this.size = size;
+    }
+    
+     
+
+        switch (measurement) {
+            case 1, 2, 3:
+                c1.setSize("S");
+                break;
+            case 4, 5, 6:
+                c1.setSize("M");
+                break;
+            case 7, 8, 9:
+                c1.setSize("L");
+                break;
+            default:
+                c1.setSize("X");
+
+        }
 }
